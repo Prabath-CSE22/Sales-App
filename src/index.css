@@ -148,6 +148,17 @@ i{
 input:hover, button:hover{
   background-color: rgba(127, 9, 9, 0.112);
   transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+  cursor: pointer;
+}
+a:hover{
+  color: rgba(127, 9, 9, 0.471);
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+  cursor: pointer;
+}
+.checkBox label:hover{
+  color: rgba(127, 9, 9, 0.471);
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+  cursor: pointer;
 }
 input{
   color: white;
