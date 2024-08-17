@@ -1,23 +1,45 @@
 
 
 function LoginPage(){
+    
+    const clear = function(){
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+
+        if (username && password) {
+            username.value = '';
+            password.value = '';
+        }
+    }
+    const login = function(){
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+
+        if (username && password) {
+            if (username.value === 'Admin' && password.value === '1234') {
+                window.location.href = 'Home.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+    }
     return(
         <div id="mainblock">
             <div className="box" id="login">
                 <h1>Login</h1><br />
                 <div className="details">
-                    <input type="text" placeholder="username"/>
+                    <input type="text" placeholder="username" id="username"/>
                     <i class='bx bx-user'></i>
                 </div>
     
                 <div className="details">
-                    <input type="password" placeholder="Password"/>
+                    <input type="password" placeholder="Password" id="password"/>
                     <i class='bx bx-lock-alt'></i>
                 </div>
                 
                 <div className="log">
-                    <button className ="Abuttons" type="submit">Login</button>
-                    <button className ="Abuttons" type="reset">Clear</button>
+                    <button className ="Abuttons" type="submit" onClick={login}>Login</button>
+                    <button className ="Abuttons" type="reset" onClick={clear}>Clear</button>
                 </div>
                
                 <div className="checkBox">
