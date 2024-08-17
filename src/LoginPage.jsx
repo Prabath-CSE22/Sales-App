@@ -44,7 +44,7 @@ function LoginPage(){
                 </div>
                 
                 <div className="log">
-                    <button className ="Abuttons" type="submit">Login</button>
+                    <button className ="Abuttons" type="submit">Sign in</button>
                     <button className ="Abuttons" type="reset">Clear</button>
                 </div>
                 <div className="con">

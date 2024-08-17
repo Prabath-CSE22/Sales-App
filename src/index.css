@@ -1,6 +1,9 @@
 body{
   background-color: rgba(249, 249, 249, 0.979);
   font-family: "Comic Sans MS", cursive, sans-serif;  
+  background-image: url("./assets/R.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #mainblock{
@@ -21,13 +24,23 @@ body{
   width: 100%;
   padding: 10px;
   border: 4px solid rgb(187, 220, 179);
+  border-radius: 10px;
 }
 #login{
-  background-color: rgba(242, 121, 230, 0.675);
+  background-color: transparent;
   border-right: none;
+  backdrop-filter: blur(5px);
+}
+#login:hover{
+  background-color: hsla(111, 49%, 55%, 0.768);
 }
 #signin{
-  background-color: rgba(239, 170, 124, 0.41);
+
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+#signin:hover{
+  background-color: hsla(22, 69%, 64%, 0.768);
 }
 .con{
   margin-top: 10px;
@@ -88,6 +101,7 @@ body{
 h1{
   margin: 5px;
   text-align: center;
+  color: white;
 }
 
 .checkBox {
@@ -126,6 +140,7 @@ h1{
 button{
   font-family: "Comic Sans MS", cursive, sans-serif;  
   color: black;
+  outline: none;
 }
 i{
   color: white;
@@ -135,5 +150,10 @@ input:hover, button:hover{
   transition: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 input{
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: bold;
+}
+a{
   color: white;
 }
