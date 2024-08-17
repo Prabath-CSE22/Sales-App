@@ -1,13 +1,10 @@
 body{
-  text-align: center;
   background-color: rgba(249, 249, 249, 0.979);
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  
-  
+  font-family: "Comic Sans MS", cursive, sans-serif;  
 }
 
 #mainblock{
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   border-color: aliceblue;
@@ -15,8 +12,7 @@ body{
   width: 90vh;
   margin: 25%;
   margin-top: 12.5%;
-  border: 5px solid rgb(137, 131, 131);
-  padding: 10px;
+  padding: 3px;
 }
 
 .box{
@@ -24,40 +20,120 @@ body{
   justify-content: center;
   width: 100%;
   padding: 10px;
+  border: 4px solid rgb(187, 220, 179);
 }
 #login{
   background-color: rgba(242, 121, 230, 0.675);
-  
+  border-right: none;
 }
 #signin{
   background-color: rgba(239, 170, 124, 0.41);
 }
-.buttons{
-  width: 100%;
-  /* position: relative; */
+.con{
+  margin-top: 10px;
+}
+.Btn{
+  position: relative;
+}
+.Btn i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
 }
 
-h1{
-  margin: 5px;
+.Btn .buttons{
+  width: 100%;
+  position: relative;
+  height: 9%;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 2%;
+  margin-bottom: 5px;
+  
 }
 
-input{
+.details{
+  position: relative;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.details i{
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.details input{
   width: 100%;
+  position: relative;
   height: 10%;
   border: 2px solid white;
   border-radius: 15px;
   outline: none;
   background: transparent;
-
-  align-items: flex-start;
-  position: relative;
+  padding: 10px;
+  margin-left: 0px;
 }
-input::placeholder{
+.details input::placeholder{
   color: white;
   font-family: "Comic Sans MS", cursive, sans-serif;
   text-align: center;
 }
+
+h1{
+  margin: 5px;
+  text-align: center;
+}
+
+.checkBox {
+  display: flex; 
+  align-items: center; /* Align checkbox vertically with text */
+  margin: 10px 0;
+  justify-content: space-between;
+  font-size: smaller;
+  color: white;
+}
+
+.checkBox input {
+  width: 15px; /* Adjust the size of the checkbox */
+  height: 15px; /* Adjust the size of the checkbox */
+  margin-right: 5px; /* Space between checkbox and text */
+  font-size: 16px;
+}
+.log{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 9%;
+  padding: 1px;
+}
+.Abuttons{
+  margin-left: 2px;
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid white;
+  color: black;
+}
+button{
+  font-family: "Comic Sans MS", cursive, sans-serif;  
+  color: black;
+}
 i{
-  position: absolute;
-  /* right: 20px; */
+  color: white;
+}
+input:hover, button:hover{
+  background-color: rgba(127, 9, 9, 0.112);
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+input{
+  color: white;
 }
