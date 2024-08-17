@@ -31,6 +31,9 @@ body{
   border-right: none;
   backdrop-filter: blur(5px);
 }
+#login:hover h1{
+  color: white;
+}
 #login:hover{
   background-color: hsla(111, 49%, 55%, 0.768);
 }
@@ -38,6 +41,10 @@ body{
 
   background-color: transparent;
   backdrop-filter: blur(5px);
+  
+}
+#signin:hover h1{
+  color: white;
 }
 #signin:hover{
   background-color: hsla(111, 49%, 55%, 0.768);
@@ -101,7 +108,7 @@ body{
 h1{
   margin: 5px;
   text-align: center;
-  color: white;
+  color: rgb(145, 140, 140);
 }
 
 .checkBox {
